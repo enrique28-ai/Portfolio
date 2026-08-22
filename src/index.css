@@ -430,6 +430,35 @@
   font-size: 0.9375rem;
 }
 
+/* Home hero */
+.home-hero__content {
+  max-width: var(--layout-content);
+}
+
+.home-hero__eyebrow {
+  font-family: var(--font-display);
+  font-size: 1rem;
+  font-weight: 650;
+  line-height: 1.4;
+  letter-spacing: -0.01em;
+  color: var(--color-accent-strong);
+}
+
+.home-hero__title {
+  max-width: 18ch;
+  margin-top: var(--space-4);
+}
+
+.home-hero__summary {
+  max-width: var(--layout-reading);
+  margin-top: var(--space-6);
+  color: var(--color-text-secondary);
+}
+
+.home-hero__actions {
+  margin-top: var(--space-6);
+}
+
 /* Current Phase 1 route placeholders, styled without adding page content. */
 .page-placeholder {
   width: calc(100% - (2 * var(--layout-gutter)));

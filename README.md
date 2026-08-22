@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 2 — Design System (`COMPLETE`). Phase 1 is complete; the reusable visual foundation is established without implementing later portfolio content.
+Phase 3 — Hero / Personal Brand (`IN PROGRESS`). Phases 1 and 2 are complete; the approved home-page introduction is now being implemented without starting later portfolio sections.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 
