@@ -8,19 +8,19 @@ const navItems = [
 
 function SiteHeader() {
   return (
-    <header className="border-b border-slate-200">
-      <div className="site-container flex flex-wrap items-center justify-between gap-4 py-4">
-        <NavLink className="font-semibold" to="/">
+    <header className="site-header">
+      <div className="site-container site-header__inner">
+        <NavLink className="site-identity" to="/">
           Enrique Preciado
         </NavLink>
 
-        <nav aria-label="Primary navigation">
-          <ul className="flex flex-wrap gap-4" role="list">
+        <nav aria-label="Primary navigation" className="site-nav">
+          <ul className="site-nav__list" role="list">
             {navItems.map(({ label, to }) => (
               <li key={to}>
                 <NavLink
                   className={({ isActive }) =>
-                    isActive ? 'underline underline-offset-4' : 'hover:underline'
+                    `site-nav__link${isActive ? ' site-nav__link--active' : ''}`
                   }
                   end={to === '/'}
                   to={to}

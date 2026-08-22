@@ -4,9 +4,12 @@ import SiteHeader from '../components/SiteHeader.jsx'
 
 function SiteLayout() {
   return (
-    <div className="flex min-h-screen flex-col">
+    <div className="site-shell">
+      <a className="skip-link" href="#main-content">
+        Skip to main content
+      </a>
       <SiteHeader />
-      <main className="site-container flex-1" id="main-content">
+      <main className="site-main" id="main-content">
         <Outlet />
       </main>
       <SiteFooter />
