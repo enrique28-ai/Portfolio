@@ -34,7 +34,7 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 4 — About & Education
 
-**Status:** NOT STARTED
+**Status:** IN PROGRESS
 
 **Goal:** Present verified personal, academic, and educational context.
 
