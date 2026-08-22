@@ -14,7 +14,7 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 2 — Design System
 
-**Status:** NOT STARTED
+**Status:** IN PROGRESS
 
 **Goal:** Define the portfolio's reusable visual language.
 

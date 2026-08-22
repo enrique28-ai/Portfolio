@@ -1,10 +1,12 @@
 function PagePlaceholder({ description, title }) {
   return (
-    <section aria-labelledby="page-title" className="py-12 sm:py-16">
-      <h1 className="text-3xl font-semibold tracking-tight" id="page-title">
-        {title}
-      </h1>
-      <p className="mt-3 max-w-2xl text-slate-600">{description}</p>
+    <section aria-labelledby="page-title" className="page-placeholder section-block">
+      <div className="page-placeholder__content content-region">
+        <h1 className="heading-display" id="page-title">
+          {title}
+        </h1>
+        <p className="page-placeholder__description body-large">{description}</p>
+      </div>
     </section>
   )
 }

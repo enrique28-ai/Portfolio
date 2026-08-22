@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 1 — Foundation (`COMPLETE`). The application shell, routing, minimal shared layout, placeholder pages, and global styling foundation are present. Later portfolio content and visual design are intentionally out of scope.
+Phase 2 — Design System (`IN PROGRESS`). Phase 1 is complete; the reusable visual foundation is now being established without implementing later portfolio content.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 

@@ -1,7 +1,7 @@
 function SiteFooter() {
   return (
-    <footer className="border-t border-slate-200">
-      <div className="site-container py-4 text-sm text-slate-600">
+    <footer className="site-footer">
+      <div className="site-container site-footer__inner">
         <p>Enrique Preciado — Academic and professional portfolio.</p>
       </div>
     </footer>
