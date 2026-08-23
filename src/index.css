@@ -263,20 +263,11 @@
   color: var(--color-text-secondary);
 }
 
-/* Reserved structural primitive for the Phase 5 complexity spine. */
+/* Structural foundation for the Phase 5 complexity spine. */
 .complexity-spine {
   --spine-color: var(--color-accent);
   --spine-width: 0.125rem;
   position: relative;
-}
-
-.complexity-spine::before {
-  position: absolute;
-  inset-block: 0;
-  inset-inline-start: 0;
-  width: var(--spine-width);
-  background: var(--spine-color);
-  content: "";
 }
 
 /* Links and control primitives */
@@ -561,6 +552,182 @@
   font-size: 0.9375rem;
 }
 
+/* Development Journey */
+.development-journey {
+  border-top: var(--border-thin);
+}
+
+.development-journey__introduction {
+  display: grid;
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, var(--layout-reading));
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.development-journey__heading > p {
+  margin-top: var(--space-5);
+  color: var(--color-text-secondary);
+}
+
+.journey-major-list,
+.journey-versions {
+  margin-block: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.journey-major-list {
+  margin-top: var(--space-8);
+}
+
+.journey-stage {
+  position: relative;
+  display: grid;
+  grid-template-columns: 2.5rem minmax(0, var(--layout-reading));
+  column-gap: var(--space-6);
+}
+
+.journey-stage__rail {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1 / span 2;
+}
+
+.journey-stage__rail::before,
+.journey-stage__rail::after,
+.journey-version__rail::before,
+.journey-version__rail::after {
+  position: absolute;
+  content: "";
+}
+
+.journey-stage__rail::before {
+  inset-block: 0;
+  inset-inline-start: 0;
+  width: var(--spine-width);
+  background: var(--spine-color);
+}
+
+.journey-stage__rail::after {
+  inset-block-start: 0.8rem;
+  inset-inline-start: 0;
+  width: 100%;
+  height: var(--spine-width);
+  background: var(--spine-color);
+}
+
+.journey-stage:last-child .journey-stage__rail::before {
+  height: calc(0.8rem + var(--spine-width));
+}
+
+.journey-stage__content {
+  grid-column: 2;
+  min-width: 0;
+  padding-bottom: var(--space-7);
+}
+
+.journey-stage__description {
+  max-width: 39rem;
+  margin-top: var(--space-4);
+  color: var(--color-text-secondary);
+  font-size: 1.0625rem;
+  line-height: 1.65;
+}
+
+.journey-stage__metadata {
+  margin-top: var(--space-4);
+  font-family: var(--font-technical);
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+}
+
+.journey-transition {
+  grid-column: 2;
+  max-width: 36rem;
+  margin-bottom: var(--space-7);
+  border-top: var(--border-thin);
+  padding-top: var(--space-5);
+}
+
+.journey-transition > :last-child {
+  margin-top: var(--space-2);
+  color: var(--color-text-secondary);
+  line-height: 1.6;
+}
+
+.journey-versions {
+  margin-top: var(--space-7);
+  border-top: var(--border-thin);
+  padding-top: var(--space-5);
+}
+
+.journey-version {
+  --version-rail-width: 1.5rem;
+  position: relative;
+  display: grid;
+  grid-template-columns: var(--version-rail-width) 3.5rem minmax(0, 1fr);
+  gap: var(--space-4);
+  min-width: 0;
+  padding-bottom: var(--space-5);
+}
+
+.journey-version:last-child {
+  padding-bottom: 0;
+}
+
+.journey-version__rail {
+  position: relative;
+  grid-column: 1;
+  grid-row: 1;
+}
+
+.journey-version__rail::before {
+  inset-block: 0;
+  inset-inline-start: 0;
+  width: 0.0625rem;
+  background: var(--color-border);
+}
+
+.journey-version__rail::after {
+  inset-block-start: 0.7rem;
+  inset-inline-start: 0;
+  width: 100%;
+  height: 0.0625rem;
+  background: var(--color-border);
+}
+
+.journey-version:last-child .journey-version__rail::before {
+  height: calc(0.7rem + 0.0625rem);
+}
+
+.journey-version__label {
+  grid-column: 2;
+  padding-top: 0.05rem;
+  font-family: var(--font-technical);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-accent-strong);
+}
+
+.journey-version__description {
+  grid-column: 3;
+  color: var(--color-text-secondary);
+  line-height: 1.55;
+}
+
+.visually-hidden {
+  position: absolute;
+  width: 1px;
+  height: 1px;
+  margin: -1px;
+  overflow: hidden;
+  clip: rect(0 0 0 0);
+  clip-path: inset(50%);
+  white-space: nowrap;
+}
+
 /* Current Phase 1 route placeholders, styled without adding page content. */
 .page-placeholder {
   width: calc(100% - (2 * var(--layout-gutter)));
@@ -611,6 +778,7 @@
 
   .home-about__layout,
   .home-education__introduction,
+  .development-journey__introduction,
   .additional-credential {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--space-5);
@@ -632,6 +800,52 @@
 
   .education-record__details {
     margin-top: var(--space-5);
+  }
+
+  .journey-major-list {
+    margin-top: var(--space-7);
+  }
+
+  .journey-stage {
+    grid-template-columns: 1.25rem minmax(0, 1fr);
+    column-gap: var(--space-4);
+  }
+
+  .journey-stage__content,
+  .journey-transition {
+    grid-column: 2;
+    padding-bottom: 0;
+  }
+
+  .journey-stage__content {
+    margin-bottom: var(--space-6);
+  }
+
+  .journey-transition {
+    margin-bottom: var(--space-7);
+  }
+
+  .journey-versions {
+    margin-top: var(--space-6);
+  }
+
+  .journey-version {
+    --version-rail-width: 1rem;
+    grid-template-columns: var(--version-rail-width) minmax(0, 1fr);
+    gap: var(--space-3);
+  }
+
+  .journey-version__label,
+  .journey-version__description {
+    grid-column: 2;
+  }
+
+  .journey-version__rail {
+    grid-row: 1 / span 2;
+  }
+
+  .journey-version__description {
+    font-size: 0.9375rem;
   }
 }
 

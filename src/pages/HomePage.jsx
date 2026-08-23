@@ -1,4 +1,5 @@
 import { Link } from 'react-router-dom'
+import DevelopmentJourney from '../components/DevelopmentJourney'
 
 function HomePage() {
   return (
@@ -116,6 +117,8 @@ function HomePage() {
           </aside>
         </div>
       </section>
+
+      <DevelopmentJourney />
     </>
   )
 }
