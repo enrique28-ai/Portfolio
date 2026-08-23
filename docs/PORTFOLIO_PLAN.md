@@ -64,7 +64,7 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 7 — CRUD-Process Case Study
 
-**Status:** NOT STARTED
+**Status:** IN PROGRESS
 
 **Goal:** Document CRUD-Process as an early stage in Enrique's development.
 

@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 6 — Featured Projects (`COMPLETE`). Phases 1–6 are complete; the projects index is implemented and the individual case studies remain reserved for Phases 7–9.
+Phase 7 — CRUD-Process Case Study (`IN PROGRESS`). Phases 1–6 remain complete while the first individual project case study is implemented and reviewed.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 

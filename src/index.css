@@ -797,6 +797,196 @@
   font-weight: 600;
 }
 
+.featured-project-record__link {
+  display: inline-flex;
+  min-height: 2.75rem;
+  margin-top: var(--space-4);
+  align-items: center;
+}
+
+/* CRUD-Process case study */
+.case-study-header {
+  padding-bottom: clamp(3.5rem, 7vw, 6rem);
+}
+
+.case-study-header h1 {
+  max-width: 18ch;
+  margin-top: var(--space-4);
+}
+
+.case-study-header__introduction {
+  max-width: var(--layout-reading);
+  margin-top: var(--space-6);
+  color: var(--color-text-secondary);
+}
+
+.case-study-metadata {
+  display: grid;
+  max-width: 52rem;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
+  gap: 0 var(--space-7);
+  margin: var(--space-8) 0 0;
+}
+
+.case-study-metadata div {
+  min-width: 0;
+  border-top: var(--border-thin);
+  padding-block: var(--space-4);
+}
+
+.case-study-metadata dt,
+.supporting-paths dt,
+.record-structure dt,
+.calculation-record dt {
+  font-family: var(--font-technical);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.case-study-metadata dd {
+  margin: var(--space-2) 0 0;
+  color: var(--color-text-primary);
+  line-height: 1.5;
+}
+
+.case-study-header__source {
+  display: inline-flex;
+  min-height: 2.75rem;
+  margin-top: var(--space-4);
+  align-items: center;
+}
+
+.case-study-section {
+  border-top: var(--border-thin);
+  padding-block: clamp(3.5rem, 7vw, 6rem);
+}
+
+.case-study-section__layout {
+  display: grid;
+  grid-template-columns: minmax(10rem, 13rem) minmax(0, var(--layout-reading));
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.case-study-section__layout > * {
+  min-width: 0;
+}
+
+.case-study-section h2 {
+  max-width: 12ch;
+  font-size: clamp(1.5rem, 2.8vw, 2.25rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.case-study-prose {
+  max-width: var(--layout-reading);
+  color: var(--color-text-secondary);
+}
+
+.case-study-section--primary h2 {
+  color: var(--color-accent-strong);
+}
+
+.case-study-section--quiet {
+  padding-block: clamp(3rem, 6vw, 4.5rem);
+}
+
+.case-study-section--quiet h2 {
+  font-size: clamp(1.375rem, 2.4vw, 1.875rem);
+}
+
+.case-study-section--closing {
+  padding-bottom: var(--space-section);
+}
+
+.system-flow,
+.case-study-workflow {
+  margin: var(--space-7) 0 0;
+  padding-inline-start: 2.25rem;
+}
+
+.system-flow__item,
+.case-study-workflow li {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(8rem, 10rem) minmax(0, 1fr);
+  gap: var(--space-5);
+  border-top: var(--border-thin);
+  padding-block: var(--space-5);
+}
+
+.system-flow__item::marker,
+.case-study-workflow li::marker {
+  font-family: var(--font-technical);
+  font-size: 0.75rem;
+  font-weight: 600;
+  color: var(--color-accent-strong);
+}
+
+.system-flow__item h3,
+.case-study-workflow h3 {
+  padding-top: 0.1rem;
+  font-size: 1rem;
+  line-height: 1.5;
+  letter-spacing: -0.01em;
+}
+
+.system-flow__item p,
+.case-study-workflow p {
+  min-width: 0;
+  color: var(--color-text-secondary);
+}
+
+.supporting-paths,
+.record-structure,
+.calculation-record {
+  margin: var(--space-7) 0 0;
+  border-bottom: var(--border-thin);
+}
+
+.supporting-paths div,
+.record-structure div,
+.calculation-record div {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(8rem, 10rem) minmax(0, 1fr);
+  gap: var(--space-5);
+  border-top: var(--border-thin);
+  padding-block: var(--space-4);
+}
+
+.supporting-paths dd,
+.record-structure dd,
+.calculation-record dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
+.record-structure dt {
+  color: var(--color-text-primary);
+}
+
+.calculation-record dd {
+  overflow-wrap: anywhere;
+  font-family: var(--font-technical);
+  font-size: 0.875rem;
+  line-height: 1.65;
+  color: var(--color-text-primary);
+}
+
+.case-study-qualification {
+  border-inline-start: 0.125rem solid var(--color-border);
+  padding-inline-start: var(--space-4);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
 /* Current Phase 1 route placeholders, styled without adding page content. */
 .page-placeholder {
   width: calc(100% - (2 * var(--layout-gutter)));
@@ -872,6 +1062,38 @@
   .featured-project-record__metadata {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .case-study-metadata,
+  .case-study-section__layout,
+  .system-flow__item,
+  .case-study-workflow li,
+  .supporting-paths div,
+  .record-structure div,
+  .calculation-record div {
+    grid-template-columns: minmax(0, 1fr);
+  }
+
+  .case-study-metadata {
+    margin-top: var(--space-7);
+  }
+
+  .case-study-section__layout {
+    gap: var(--space-5);
+  }
+
+  .system-flow,
+  .case-study-workflow {
+    margin-top: var(--space-6);
+    padding-inline-start: 1.75rem;
+  }
+
+  .system-flow__item,
+  .case-study-workflow li,
+  .supporting-paths div,
+  .record-structure div,
+  .calculation-record div {
+    gap: var(--space-2);
   }
 
   .education-records {
