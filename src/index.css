@@ -877,7 +877,10 @@
 }
 
 .case-study-section h2 {
-  max-width: 12ch;
+  max-width: 13ch;
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
   font-size: clamp(1.5rem, 2.8vw, 2.25rem);
   line-height: 1.12;
   letter-spacing: -0.025em;
