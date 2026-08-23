@@ -1,6 +1,7 @@
 const featuredProjects = [
   {
     category: 'Process-data web application',
+    caseStudyPath: '/projects/crud-process',
     evidence:
       'How structured operational data can support a defined calculation and reporting workflow.',
     id: 'crud-process',

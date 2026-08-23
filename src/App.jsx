@@ -1,6 +1,7 @@
 import { Route, Routes } from 'react-router-dom'
 import SiteLayout from './layouts/SiteLayout.jsx'
 import ContactPage from './pages/ContactPage.jsx'
+import CrudProcessCaseStudyPage from './pages/CrudProcessCaseStudyPage.jsx'
 import HomePage from './pages/HomePage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 import ProjectPage from './pages/ProjectPage.jsx'
@@ -12,10 +13,7 @@ function App() {
       <Route element={<SiteLayout />}>
         <Route index element={<HomePage />} />
         <Route path="projects" element={<ProjectsPage />} />
-        <Route
-          path="projects/crud-process"
-          element={<ProjectPage projectName="CRUD-Process" />}
-        />
+        <Route path="projects/crud-process" element={<CrudProcessCaseStudyPage />} />
         <Route
           path="projects/medrecord"
           element={<ProjectPage projectName="MedRecord" />}

@@ -1,3 +1,5 @@
+import { Link } from 'react-router-dom'
+
 function FeaturedProjectRecord({ project }) {
   const recordClassName = project.evolution
     ? 'featured-project-record featured-project-record--current'
@@ -25,6 +27,15 @@ function FeaturedProjectRecord({ project }) {
           </p>
           {project.evolution ? <p>{project.evolution}</p> : null}
         </div>
+
+        {project.caseStudyPath ? (
+          <Link
+            className="featured-project-record__link text-link"
+            to={project.caseStudyPath}
+          >
+            Read case study
+          </Link>
+        ) : null}
       </div>
     </article>
   )
