@@ -54,13 +54,13 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 6 — Featured Projects
 
-**Status:** NOT STARTED
+**Status:** COMPLETE
 
 **Goal:** Provide an accessible overview of selected portfolio work.
 
-**Scope:** Create the projects overview and pathways to the three approved case studies using verified summaries.
+**Scope:** Create the projects overview using verified summaries and a structure that can receive case-study pathways as Phases 7–9 are completed.
 
-**Completion criteria:** Each project is represented accurately, project relationships are clear, and every case-study link is accessible and functional.
+**Completion criteria:** Each project is represented accurately, project relationships are clear, the projects index is accessible and responsive, and the structure can accept functional case-study links without redesign.
 
 ## Phase 7 — CRUD-Process Case Study
 

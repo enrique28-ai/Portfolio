@@ -728,6 +728,75 @@
   white-space: nowrap;
 }
 
+/* Featured Projects editorial index */
+.projects-index__introduction {
+  display: grid;
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, var(--layout-reading));
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.projects-index__introduction .body-large {
+  margin-top: var(--space-5);
+  color: var(--color-text-secondary);
+}
+
+.featured-project-records {
+  margin-top: var(--space-8);
+}
+
+.featured-project-record {
+  display: grid;
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, var(--layout-reading));
+  gap: var(--space-7);
+  border-top: var(--border-thin);
+  padding-block: var(--space-7);
+}
+
+.featured-project-record__identity h2 {
+  margin-top: var(--space-2);
+  font-size: clamp(1.75rem, 3.25vw, 2.5rem);
+}
+
+.featured-project-record__summary {
+  color: var(--color-text-primary);
+  font-size: 1.125rem;
+  line-height: 1.65;
+}
+
+.featured-project-record__evidence {
+  display: grid;
+  grid-template-columns: 10rem minmax(0, 1fr);
+  gap: var(--space-5);
+  margin-top: var(--space-6);
+  border-top: var(--border-thin);
+  padding-top: var(--space-5);
+}
+
+.featured-project-record__evidence > :last-child {
+  color: var(--color-text-secondary);
+}
+
+.featured-project-record__metadata {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-5);
+  margin-top: var(--space-6);
+  font-family: var(--font-technical);
+  font-size: 0.75rem;
+  line-height: 1.6;
+  color: var(--color-text-secondary);
+}
+
+.featured-project-record--current {
+  padding-block: var(--space-8);
+}
+
+.featured-project-record--current .featured-project-record__metadata > :last-child {
+  color: var(--color-accent-strong);
+  font-weight: 600;
+}
+
 /* Current Phase 1 route placeholders, styled without adding page content. */
 .page-placeholder {
   width: calc(100% - (2 * var(--layout-gutter)));
@@ -779,9 +848,30 @@
   .home-about__layout,
   .home-education__introduction,
   .development-journey__introduction,
+  .projects-index__introduction,
+  .featured-project-record,
   .additional-credential {
     grid-template-columns: minmax(0, 1fr);
     gap: var(--space-5);
+  }
+
+  .featured-project-records {
+    margin-top: var(--space-7);
+  }
+
+  .featured-project-record,
+  .featured-project-record--current {
+    padding-block: var(--space-6);
+  }
+
+  .featured-project-record__evidence {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-2);
+  }
+
+  .featured-project-record__metadata {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .education-records {

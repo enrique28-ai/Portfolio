@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 5 — Development Journey (`COMPLETE`). Phases 1–4 are complete; the verified project and DR-VIPS version progression is being implemented on the homepage without starting later portfolio sections.
+Phase 6 — Featured Projects (`COMPLETE`). Phases 1–6 are complete; the projects index is implemented and the individual case studies remain reserved for Phases 7–9.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 
