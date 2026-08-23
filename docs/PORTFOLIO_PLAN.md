@@ -54,7 +54,7 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 6 — Featured Projects
 
-**Status:** NOT STARTED
+**Status:** IN PROGRESS
 
 **Goal:** Provide an accessible overview of selected portfolio work.
 
