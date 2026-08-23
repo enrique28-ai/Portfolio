@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 7 — CRUD-Process Case Study (`IN PROGRESS`). Phases 1–6 remain complete while the first individual project case study is implemented and reviewed.
+Phase 7 — CRUD-Process Case Study (`COMPLETE`). Phases 1–7 are complete; the first individual case study is implemented, while MedRecord and DR-VIPS remain reserved for Phases 8 and 9.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 
