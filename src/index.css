@@ -990,6 +990,99 @@
   line-height: 1.6;
 }
 
+/* MedRecord account-scoped record hierarchy */
+.record-hierarchy {
+  min-width: 0;
+  margin: var(--space-7) 0 0;
+  padding: 0;
+}
+
+.record-hierarchy .record-hierarchy {
+  margin-top: var(--space-5);
+  margin-inline-start: var(--space-6);
+  border-inline-start: 0.125rem solid var(--color-border);
+  padding-inline-start: var(--space-6);
+}
+
+.record-hierarchy__item {
+  min-width: 0;
+  border-top: var(--border-thin);
+  padding-top: var(--space-5);
+}
+
+.record-hierarchy__item > dt {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(8rem, 10rem) minmax(0, 1fr);
+  gap: var(--space-5);
+  align-items: baseline;
+}
+
+.record-hierarchy__label {
+  font-family: var(--font-display);
+  font-size: 1.125rem;
+  font-weight: 650;
+  line-height: 1.35;
+  color: var(--color-text-primary);
+}
+
+.record-hierarchy__model,
+.record-hierarchy__relationship {
+  font-family: var(--font-technical);
+  font-size: 0.75rem;
+  line-height: 1.6;
+}
+
+.record-hierarchy__model {
+  color: var(--color-text-secondary);
+}
+
+.record-hierarchy__item > dd {
+  min-width: 0;
+  margin: var(--space-4) 0 0;
+}
+
+.record-hierarchy__item > dd > p:not(.record-hierarchy__relationship) {
+  color: var(--color-text-secondary);
+}
+
+.record-hierarchy__relationship {
+  margin-bottom: var(--space-2);
+  font-weight: 600;
+  color: var(--color-accent-strong);
+}
+
+/* MedRecord Django responsibility ledger */
+.django-responsibilities {
+  margin: var(--space-7) 0 0;
+  border-bottom: var(--border-thin);
+}
+
+.django-responsibilities__item {
+  display: grid;
+  min-width: 0;
+  grid-template-columns: minmax(8rem, 10rem) minmax(0, 1fr);
+  gap: var(--space-5);
+  border-top: var(--border-thin);
+  padding-block: var(--space-4);
+}
+
+.django-responsibilities__item dt {
+  font-family: var(--font-technical);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.django-responsibilities__item dd {
+  min-width: 0;
+  margin: 0;
+  color: var(--color-text-secondary);
+}
+
 /* Current Phase 1 route placeholders, styled without adding page content. */
 .page-placeholder {
   width: calc(100% - (2 * var(--layout-gutter)));
@@ -1073,7 +1166,9 @@
   .case-study-workflow li,
   .supporting-paths div,
   .record-structure div,
-  .calculation-record div {
+  .calculation-record div,
+  .record-hierarchy__item > dt,
+  .django-responsibilities__item {
     grid-template-columns: minmax(0, 1fr);
   }
 
@@ -1095,8 +1190,23 @@
   .case-study-workflow li,
   .supporting-paths div,
   .record-structure div,
-  .calculation-record div {
+  .calculation-record div,
+  .record-hierarchy__item > dt,
+  .django-responsibilities__item {
     gap: var(--space-2);
+  }
+
+  .record-hierarchy .record-hierarchy {
+    margin-inline-start: var(--space-3);
+    padding-inline-start: var(--space-3);
+  }
+
+  .record-hierarchy__item,
+  .record-hierarchy__item > dt,
+  .record-hierarchy__item > dd,
+  .django-responsibilities__item,
+  .django-responsibilities__item dd {
+    min-width: 0;
   }
 
   .education-records {

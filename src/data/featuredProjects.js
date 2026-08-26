@@ -12,6 +12,7 @@ const featuredProjects = [
   },
   {
     category: 'Patient and diagnosis record application',
+    caseStudyPath: '/projects/medrecord',
     evidence:
       'How related records can be organized around the account and subject they belong to.',
     id: 'medrecord',

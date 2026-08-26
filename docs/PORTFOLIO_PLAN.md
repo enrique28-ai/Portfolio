@@ -74,7 +74,7 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 8 — MedRecord Case Study
 
-**Status:** NOT STARTED
+**Status:** IN PROGRESS
 
 **Goal:** Document MedRecord and the engineering growth it represents.
 
