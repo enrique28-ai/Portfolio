@@ -84,7 +84,7 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 9 — DR-VIPS Case Study
 
-**Status:** NOT STARTED
+**Status:** IN PROGRESS
 
 **Goal:** Present DR-VIPS as Enrique's most mature project family using verified evidence.
 

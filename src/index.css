@@ -1083,6 +1083,121 @@
   color: var(--color-text-secondary);
 }
 
+/* DR-VIPS responsibility expansion */
+.dr-vips-case-study__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+  margin-top: var(--space-5);
+  align-items: center;
+}
+
+.dr-vips-case-study__source {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+}
+
+.responsibility-ledger {
+  margin: var(--space-7) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.responsibility-ledger__item {
+  --ledger-version-width: 4.25rem;
+  position: relative;
+  display: grid;
+  min-width: 0;
+  grid-template-columns: var(--ledger-version-width) minmax(0, 1fr);
+  column-gap: var(--space-6);
+  border-top: var(--border-thin);
+  padding-block: var(--space-6);
+}
+
+.responsibility-ledger__item:last-child {
+  border-bottom: var(--border-thin);
+}
+
+.responsibility-ledger__item::before {
+  position: absolute;
+  inset-block: -0.0625rem;
+  inset-inline-start: calc(var(--ledger-version-width) + var(--space-3));
+  width: 0.125rem;
+  background: var(--color-border);
+  content: '';
+}
+
+.responsibility-ledger__item::after {
+  position: absolute;
+  inset-block-start: 2.05rem;
+  inset-inline-start: calc(var(--ledger-version-width) + var(--space-3));
+  width: var(--space-3);
+  height: 0.125rem;
+  background: var(--color-accent);
+  content: '';
+}
+
+.responsibility-ledger__header {
+  display: grid;
+  grid-column: 1 / -1;
+  grid-template-columns: var(--ledger-version-width) minmax(0, 1fr);
+  column-gap: var(--space-6);
+}
+
+.responsibility-ledger__version {
+  grid-column: 1;
+  padding-top: 0.15rem;
+  font-family: var(--font-technical);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.5;
+  color: var(--color-accent-strong);
+}
+
+.responsibility-ledger__header h3,
+.responsibility-ledger__summary,
+.responsibility-ledger__evidence {
+  grid-column: 2;
+  min-width: 0;
+}
+
+.responsibility-ledger__header h3 {
+  font-size: 1.1875rem;
+  line-height: 1.35;
+}
+
+.responsibility-ledger__summary {
+  margin-top: var(--space-3);
+  color: var(--color-text-secondary);
+}
+
+.responsibility-ledger__evidence {
+  margin-top: var(--space-3);
+  overflow-wrap: anywhere;
+  font-family: var(--font-technical);
+  font-size: 0.75rem;
+  line-height: 1.65;
+  color: var(--color-text-primary);
+}
+
+.dr-vips-access-sequence {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-2) var(--space-3);
+  border-block: var(--border-thin);
+  padding-block: var(--space-4);
+  font-family: var(--font-technical);
+  font-size: 0.8125rem;
+  font-weight: 600;
+  line-height: 1.6;
+  color: var(--color-text-primary);
+}
+
+.dr-vips-access-sequence [aria-hidden='true'] {
+  color: var(--color-accent-strong);
+}
+
 /* Current Phase 1 route placeholders, styled without adding page content. */
 .page-placeholder {
   width: calc(100% - (2 * var(--layout-gutter)));
@@ -1207,6 +1322,54 @@
   .django-responsibilities__item,
   .django-responsibilities__item dd {
     min-width: 0;
+  }
+
+  .dr-vips-case-study__actions {
+    align-items: flex-start;
+    flex-direction: column;
+  }
+
+  .responsibility-ledger {
+    margin-top: var(--space-6);
+  }
+
+  .responsibility-ledger__item {
+    --ledger-version-width: 1.25rem;
+    display: block;
+    padding-block: var(--space-5);
+    padding-inline-start: calc(var(--ledger-version-width) + var(--space-4));
+  }
+
+  .responsibility-ledger__item::before {
+    inset-inline-start: var(--ledger-version-width);
+  }
+
+  .responsibility-ledger__item::after {
+    inset-block-start: 1.9rem;
+    inset-inline-start: var(--ledger-version-width);
+    width: var(--space-3);
+  }
+
+  .responsibility-ledger__header {
+    display: block;
+  }
+
+  .responsibility-ledger__summary,
+  .responsibility-ledger__evidence {
+    min-width: 0;
+  }
+
+  .responsibility-ledger__version {
+    padding-top: 0;
+  }
+
+  .responsibility-ledger__header h3 {
+    margin-top: var(--space-1);
+  }
+
+  .dr-vips-access-sequence {
+    align-items: flex-start;
+    flex-direction: column;
   }
 
   .education-records {
