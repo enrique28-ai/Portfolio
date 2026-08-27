@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 9 — DR-VIPS Case Study (`IN PROGRESS`). Phases 1–8 are complete; the DR-VIPS case study is currently being implemented.
+Phase 9 — DR-VIPS Case Study (`COMPLETE`). Phases 1–9 are complete; the DR-VIPS case study is implemented and reviewed.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 
