@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 8 — MedRecord Case Study (`COMPLETE`). Phases 1–8 are complete; the CRUD-Process and MedRecord case studies are implemented, while DR-VIPS remains reserved for Phase 9.
+Phase 9 — DR-VIPS Case Study (`IN PROGRESS`). Phases 1–8 are complete; the DR-VIPS case study is currently being implemented.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 

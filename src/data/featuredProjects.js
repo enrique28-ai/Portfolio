@@ -23,6 +23,7 @@ const featuredProjects = [
   },
   {
     category: 'Iterative full-stack application',
+    caseStudyPath: '/projects/dr-vips',
     evidence:
       'How one project family was revised to support a wider set of records, roles, and workflows.',
     evolution: 'Documented evolution: 1.0\u20136.0',
