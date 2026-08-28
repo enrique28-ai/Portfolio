@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 10 — Skills (`IN PROGRESS`). Phases 1–9 are complete; the Skills page is currently being implemented.
+Phase 10 — Skills (`COMPLETE`). Phases 1–10 are complete; the Skills page is implemented and reviewed.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 
