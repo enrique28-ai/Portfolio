@@ -7,6 +7,7 @@ import HomePage from './pages/HomePage.jsx'
 import MedRecordCaseStudyPage from './pages/MedRecordCaseStudyPage.jsx'
 import NotFoundPage from './pages/NotFoundPage.jsx'
 import ProjectsPage from './pages/ProjectsPage.jsx'
+import SkillsPage from './pages/SkillsPage.jsx'
 
 function App() {
   return (
@@ -17,6 +18,7 @@ function App() {
         <Route path="projects/crud-process" element={<CrudProcessCaseStudyPage />} />
         <Route path="projects/medrecord" element={<MedRecordCaseStudyPage />} />
         <Route path="projects/dr-vips" element={<DrVipsCaseStudyPage />} />
+        <Route path="skills" element={<SkillsPage />} />
         <Route path="contact" element={<ContactPage />} />
         <Route path="*" element={<NotFoundPage />} />
       </Route>
