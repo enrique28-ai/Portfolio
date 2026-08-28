@@ -1198,6 +1198,168 @@
   color: var(--color-accent-strong);
 }
 
+/* Skills capability evidence ledger */
+.skills-page__header {
+  display: grid;
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, var(--layout-reading));
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.skills-page__header h1 {
+  max-width: 15ch;
+}
+
+.skills-page__introduction {
+  margin-top: var(--space-5);
+  color: var(--color-text-secondary);
+}
+
+.skills-ledger {
+  margin-top: var(--space-9);
+}
+
+.skills-ledger__head,
+.skills-ledger__row {
+  display: grid;
+  grid-template-columns: minmax(13rem, 1.05fr) minmax(11rem, 0.8fr) minmax(16rem, 1.35fr);
+  gap: var(--space-7);
+}
+
+.skills-ledger__head {
+  padding-bottom: var(--space-3);
+  font-family: var(--font-technical);
+  font-size: 0.75rem;
+  font-weight: 500;
+  line-height: 1.5;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  color: var(--color-text-secondary);
+}
+
+.skills-ledger__row {
+  min-width: 0;
+  border-top: var(--border-thin);
+  padding-block: var(--space-7);
+  align-items: start;
+}
+
+.skills-ledger__row:last-child {
+  border-bottom: var(--border-thin);
+}
+
+.skills-ledger__row > * {
+  min-width: 0;
+}
+
+.skills-ledger__capability h2 {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  font-size: clamp(1.5rem, 2.6vw, 2.125rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.skills-ledger__capability p {
+  margin-top: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
+.skills-ledger__label {
+  font-family: var(--font-technical);
+  font-size: 0.75rem;
+  font-weight: 600;
+  line-height: 1.5;
+  letter-spacing: 0.065em;
+  text-transform: uppercase;
+  color: var(--color-text-primary);
+}
+
+.skills-ledger__methods ul,
+.skills-ledger__evidence ul {
+  margin: var(--space-4) 0 0;
+  padding: 0;
+  list-style: none;
+}
+
+.skills-ledger__methods li {
+  border-top: var(--border-thin);
+  padding-block: var(--space-2);
+  overflow-wrap: anywhere;
+  font-family: var(--font-technical);
+  font-size: 0.75rem;
+  line-height: 1.55;
+  color: var(--color-text-secondary);
+}
+
+.skills-ledger__evidence > ul > li {
+  border-top: var(--border-thin);
+  padding-block: var(--space-3);
+}
+
+.skills-ledger__evidence .text-link {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
+}
+
+.skills-ledger__evidence p,
+.skills-ledger__evidence li li {
+  color: var(--color-text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.55;
+}
+
+.skills-ledger__evidence p {
+  margin-top: var(--space-1);
+}
+
+.skills-ledger__evidence li ul {
+  margin-top: var(--space-1);
+}
+
+.skills-ledger__evidence li li {
+  position: relative;
+  padding-inline-start: var(--space-4);
+}
+
+.skills-ledger__evidence li li::before {
+  position: absolute;
+  inset-block-start: 0.75em;
+  inset-inline-start: 0;
+  width: 0.35rem;
+  height: 0.0625rem;
+  background: var(--color-border);
+  content: '';
+}
+
+.skills-page__qualification {
+  max-width: var(--layout-reading);
+  margin-top: var(--space-7);
+  border-inline-start: 0.125rem solid var(--color-border);
+  padding-inline-start: var(--space-4);
+  color: var(--color-text-secondary);
+  font-size: 0.9375rem;
+  line-height: 1.6;
+}
+
+@media (max-width: 63.99rem) {
+  .skills-ledger__head {
+    display: none;
+  }
+
+  .skills-ledger__row {
+    grid-template-columns: minmax(0, 1fr) minmax(0, 1fr);
+    gap: var(--space-6) var(--space-7);
+  }
+
+  .skills-ledger__capability {
+    grid-column: 1 / -1;
+    max-width: var(--layout-reading);
+  }
+}
+
 /* Current Phase 1 route placeholders, styled without adding page content. */
 .page-placeholder {
   width: calc(100% - (2 * var(--layout-gutter)));
@@ -1250,6 +1412,7 @@
   .home-education__introduction,
   .development-journey__introduction,
   .projects-index__introduction,
+  .skills-page__header,
   .featured-project-record,
   .additional-credential {
     grid-template-columns: minmax(0, 1fr);
@@ -1370,6 +1533,28 @@
   .dr-vips-access-sequence {
     align-items: flex-start;
     flex-direction: column;
+  }
+
+  .skills-ledger {
+    margin-top: var(--space-8);
+  }
+
+  .skills-ledger__row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-6);
+    padding-block: var(--space-6);
+  }
+
+  .skills-ledger__capability {
+    grid-column: auto;
+  }
+
+  .skills-ledger__capability p {
+    margin-top: var(--space-3);
+  }
+
+  .skills-page__qualification {
+    margin-top: var(--space-6);
   }
 
   .education-records {
