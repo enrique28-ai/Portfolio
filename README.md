@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 10 — Skills (`COMPLETE`). Phases 1–10 are complete; the Skills page is implemented and reviewed.
+Phase 11 — Contact & Professional Links (`COMPLETE`). Phases 1–11 are complete; the Contact and Professional Links phase is implemented and reviewed.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 

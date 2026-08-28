@@ -416,8 +416,29 @@
   display: flex;
   min-height: 5rem;
   align-items: center;
+  justify-content: space-between;
+  gap: var(--space-4) var(--space-7);
   color: var(--color-text-secondary);
   font-size: 0.9375rem;
+}
+
+.site-footer__nav {
+  flex: none;
+}
+
+.site-footer__links {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0 var(--space-5);
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+
+.site-footer__links .text-link {
+  display: inline-flex;
+  min-height: 2.75rem;
+  align-items: center;
 }
 
 /* Home hero */
@@ -1344,6 +1365,91 @@
   line-height: 1.6;
 }
 
+/* Contact and professional links directory */
+.contact-page__header {
+  display: grid;
+  grid-template-columns: minmax(12rem, 16rem) minmax(0, var(--layout-reading));
+  gap: var(--space-7);
+  align-items: start;
+}
+
+.contact-page__header h1 {
+  max-width: 12ch;
+}
+
+.contact-page__introduction {
+  margin-top: var(--space-5);
+  color: var(--color-text-secondary);
+}
+
+.contact-directory {
+  margin-top: var(--space-9);
+  border-bottom: var(--border-thin);
+}
+
+.contact-directory__row {
+  display: grid;
+  grid-template-columns: minmax(10rem, 0.8fr) minmax(8rem, 0.7fr) minmax(18rem, 1.5fr);
+  gap: var(--space-7);
+  min-width: 0;
+  border-top: var(--border-thin);
+  padding-block: var(--space-7);
+  align-items: start;
+}
+
+.contact-directory__row > * {
+  min-width: 0;
+}
+
+.contact-directory__row h2 {
+  overflow-wrap: normal;
+  word-break: normal;
+  hyphens: none;
+  font-size: clamp(1.5rem, 2.6vw, 2.125rem);
+  line-height: 1.12;
+  letter-spacing: -0.025em;
+}
+
+.contact-directory__details p {
+  max-width: 38rem;
+  color: var(--color-text-secondary);
+}
+
+.contact-directory__action {
+  display: inline-flex;
+  min-height: 2.75rem;
+  margin-top: var(--space-3);
+  align-items: center;
+}
+
+.contact-directory__email-address {
+  display: block;
+  max-width: 100%;
+  margin-top: var(--space-1);
+  overflow-wrap: anywhere;
+  font-family: var(--font-technical);
+  font-size: 0.8125rem;
+  line-height: 1.5;
+  color: var(--color-text-secondary);
+}
+
+@media (max-width: 63.99rem) {
+  .contact-directory__row {
+    grid-template-columns: minmax(9rem, 0.65fr) minmax(0, 1.35fr);
+    gap: var(--space-4) var(--space-7);
+  }
+
+  .contact-directory__category,
+  .contact-directory__row h2 {
+    grid-column: 1;
+  }
+
+  .contact-directory__details {
+    grid-column: 2;
+    grid-row: 1 / span 2;
+  }
+}
+
 @media (max-width: 63.99rem) {
   .skills-ledger__head {
     display: none;
@@ -1413,6 +1519,7 @@
   .development-journey__introduction,
   .projects-index__introduction,
   .skills-page__header,
+  .contact-page__header,
   .featured-project-record,
   .additional-credential {
     grid-template-columns: minmax(0, 1fr);
@@ -1555,6 +1662,39 @@
 
   .skills-page__qualification {
     margin-top: var(--space-6);
+  }
+
+  .contact-directory {
+    margin-top: var(--space-8);
+  }
+
+  .contact-directory__row {
+    grid-template-columns: minmax(0, 1fr);
+    gap: var(--space-3);
+    padding-block: var(--space-6);
+  }
+
+  .contact-directory__category,
+  .contact-directory__row h2,
+  .contact-directory__details {
+    grid-column: auto;
+    grid-row: auto;
+  }
+
+  .contact-directory__details p {
+    margin-top: var(--space-1);
+  }
+
+  .site-footer__inner {
+    min-height: auto;
+    padding-block: var(--space-5);
+    align-items: flex-start;
+    flex-direction: column;
+    gap: var(--space-2);
+  }
+
+  .site-footer__links {
+    gap: 0 var(--space-4);
   }
 
   .education-records {
