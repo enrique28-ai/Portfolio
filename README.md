@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 11 — Contact & Professional Links (`COMPLETE`). Phases 1–11 are complete; the Contact and Professional Links phase is implemented and reviewed.
+Phase 13 — Motion & Visual Polish (`COMPLETE`). Phases 1–11 are complete; Phase 12 was intentionally skipped for the current release, and Phase 13 visual-polish work is implemented and reviewed.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 
