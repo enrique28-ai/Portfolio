@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 13 — Motion & Visual Polish (`COMPLETE`). Phases 1–11 are complete; Phase 12 was intentionally skipped for the current release, and Phase 13 visual-polish work is implemented and reviewed.
+Phase 14 — SEO & Sharing Metadata (`COMPLETE`). Phases 1–11, Phase 13, and Phase 14 are complete; Phase 12 was intentionally skipped for the current release. Route metadata, indexing guidance, and sharing metadata are implemented and reviewed.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan.
 
