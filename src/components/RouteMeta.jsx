@@ -107,4 +107,3 @@ function RouteMeta({ pathname }) {
 }
 
 export default RouteMeta
-
