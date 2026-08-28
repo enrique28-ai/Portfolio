@@ -114,7 +114,9 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 12 — Project Media / Screenshots
 
-**Status:** NOT STARTED
+**Status:** SKIPPED
+
+**Note:** Project media was intentionally deferred for the current release.
 
 **Goal:** Strengthen project understanding with accurate visual evidence.
 
@@ -124,7 +126,7 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 13 — Motion & Visual Polish
 
-**Status:** NOT STARTED
+**Status:** COMPLETE
 
 **Goal:** Refine the experience with purposeful finishing details.
 
