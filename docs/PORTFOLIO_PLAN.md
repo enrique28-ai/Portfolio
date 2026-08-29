@@ -146,7 +146,7 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 15 — Deployment & Domain
 
-**Status:** NOT STARTED
+**Status:** IN PROGRESS
 
 **Goal:** Publish the approved portfolio at its intended public location.
 
