@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 15 — Deployment & Domain (`IN PROGRESS`). Phases 1–11, Phase 13, and Phase 14 are complete; Phase 12 was intentionally skipped for the current release. Phase 15 deployment preparation is in progress; the site has not been deployed and the production domain is not yet live.
+Phase 15 — Deployment & Domain (`COMPLETE`). Phases 1–11, Phase 13, Phase 14, and Phase 15 are complete; Phase 12 was intentionally skipped for the current release. The portfolio is publicly deployed at [https://enriquepreciado.dev](https://enriquepreciado.dev). Phase 16 has not started.
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan and [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the approved deployment architecture.
 

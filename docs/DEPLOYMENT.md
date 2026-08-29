@@ -1,10 +1,12 @@
 # Deployment
 
-This document records the approved production architecture. The portfolio has not yet been deployed, and the redirects described below are not yet live.
+This document records the current production architecture. The portfolio is deployed on Cloudflare Pages at `https://enriquepreciado.dev`.
 
 ## Build configuration
 
 - **Hosting:** Cloudflare Pages
+- **Cloudflare Pages project:** `portfolio`
+- **Pages hostname:** `https://portfolio-8au.pages.dev`
 - **Repository:** `enrique28-ai/Portfolio`
 - **Production branch:** `main`
 - **Framework:** Vite
@@ -13,6 +15,9 @@ This document records the approved production architecture. The portfolio has no
 - **Node:** `22.18.0`
 - **Environment variables:** None
 - **Canonical production origin:** `https://enriquepreciado.dev`
+- **Custom domain:** Active with SSL enabled
+
+Automatic deployments are connected to the GitHub repository. Updates to the production branch `main` produce production deployments.
 
 ## Routing
 
@@ -39,15 +44,21 @@ Unknown application URLs use the SPA fallback, so the initial HTTP response may 
 
 ## Canonical host policy
 
-The primary host will be `https://enriquepreciado.dev`.
+The primary host is `https://enriquepreciado.dev`.
 
-After deployment, the intended redirects are:
+Cloudflare DNS records:
 
-- `http://enriquepreciado.dev/*` to `https://enriquepreciado.dev/*`
+- `enriquepreciado.dev` is a proxied CNAME to `portfolio-8au.pages.dev` with automatic TTL.
+- `www.enriquepreciado.dev` is a proxied A record to `192.0.2.1` with automatic TTL. It exists only to enter Cloudflare and redirect to the canonical apex domain.
+
+The active Bulk Redirect List is `portfolio_canonical_redirects`, and the enabled Bulk Redirect Rule is `portfolio-canonical-redirects-rule`.
+
+Active permanent redirects:
+
 - `https://www.enriquepreciado.dev/*` to `https://enriquepreciado.dev/*`
-- the Cloudflare Pages production hostname to `https://enriquepreciado.dev/*`
+- `https://portfolio-8au.pages.dev/*` to `https://enriquepreciado.dev/*`
 
-Redirects must preserve paths and query strings. These redirects are not yet configured or live.
+Both redirects use HTTP `301` and preserve paths, path suffixes, and query strings.
 
 ## Metadata limitation
 
