@@ -1,4 +1,4 @@
-export const SITE_ORIGIN = 'https://enriquepreciado.com'
+export const SITE_ORIGIN = 'https://enriquepreciado.dev'
 
 const homeUrl = `${SITE_ORIGIN}/`
 
