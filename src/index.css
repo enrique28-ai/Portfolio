@@ -894,6 +894,24 @@
   align-items: center;
 }
 
+.case-study-header__actions {
+  display: flex;
+  flex-wrap: wrap;
+  gap: var(--space-3) var(--space-5);
+  margin-top: var(--space-5);
+  align-items: center;
+}
+
+.case-study-header__actions .case-study-header__source {
+  margin-top: 0;
+}
+
+.case-study-header__sample-note {
+  max-width: var(--layout-reading);
+  margin-top: var(--space-3);
+  color: var(--color-text-secondary);
+}
+
 .case-study-section {
   border-top: var(--border-thin);
   padding-block: clamp(3.5rem, 7vw, 6rem);
@@ -1607,6 +1625,7 @@
     min-width: 0;
   }
 
+  .case-study-header__actions,
   .dr-vips-case-study__actions {
     align-items: flex-start;
     flex-direction: column;

@@ -112,17 +112,17 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 **Completion criteria:** Every published detail is approved, every link works, and contact actions are clear, accessible, and privacy-conscious.
 
-## Phase 12 — Project Media / Screenshots
+## Phase 12 — Project Evidence
 
-**Status:** SKIPPED
+**Status:** COMPLETE
 
-**Note:** Project media was intentionally deferred for the current release.
+**Note:** This phase was originally deferred for the first release and later resumed. It was completed using directly reviewable project evidence: qualified historical running samples for CRUD-Process and MedRecord, and the DR-VIPS live demo. Historical samples are framed as implementation evidence rather than as current production applications; screenshots were not required for the current portfolio.
 
-**Goal:** Strengthen project understanding with accurate visual evidence.
+**Goal:** Strengthen project understanding with accurate, directly reviewable project evidence.
 
-**Scope:** Select, prepare, caption, and integrate approved project screenshots or other media without exposing sensitive information.
+**Scope:** Integrate approved project evidence such as historical running samples and, where useful, screenshots or other media, without exposing sensitive information or overstating project maturity.
 
-**Completion criteria:** Media is relevant, optimized, responsive, accessible, accurately captioned, and free of private or sensitive data.
+**Completion criteria:** Evidence is relevant and truthful; external sample links work; historical samples are clearly qualified; screenshots or other media, if used, are responsive, accessible, accurately captioned, and free of sensitive data; and the portfolio does not imply that an older project is currently maintained or production-ready.
 
 ## Phase 13 — Motion & Visual Polish
 
