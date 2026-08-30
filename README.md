@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 15 — Deployment & Domain (`COMPLETE`). Phases 1–11, Phase 13, Phase 14, and Phase 15 are complete; Phase 12 was intentionally skipped for the current release. The portfolio is publicly deployed at [https://enriquepreciado.dev](https://enriquepreciado.dev). Phase 16 has not started.
+Phase 16 — Final Admissions Audit (`COMPLETE`). Phases 1–11 and Phases 13–16 are complete; Phase 12 was intentionally skipped for the current release. The final admissions audit is complete, and the portfolio is ready for admissions use. Production remains [https://enriquepreciado.dev](https://enriquepreciado.dev).
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan and [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the approved deployment architecture.
 
@@ -44,9 +44,9 @@ public/             Static public assets
 src/
   assets/           Source-controlled media assets
   components/       Shared interface components
-  data/             Future structured portfolio content
+  data/             Structured portfolio content and metadata
   layouts/          Shared page layouts
-  pages/            Route-level placeholder pages
+  pages/            Route-level pages and project case studies
   App.jsx            Application routes
   index.css          Tailwind and global CSS foundation
   main.jsx           React application entry point

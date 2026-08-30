@@ -3,7 +3,7 @@ export const developmentJourney = [
     id: 'crud-process',
     name: 'CRUD-Process',
     description:
-      'CRUD-Process established an authenticated Flask application for recording process data, organizing entries into user-owned tables, calculating efficiency, and charting results.',
+      'CRUD-Process established an authenticated Flask application for recording process data, organizing entries into user-owned tables, calculating an application-defined efficiency percentage, and charting results.',
     metadata: ['Python', 'Flask', 'SQLAlchemy', 'MySQL'],
     transition: {
       label: 'What changed next',
@@ -56,7 +56,7 @@ export const developmentJourney = [
       {
         version: '6.0',
         description:
-          'Expanded the system with record histories, family and consent workflows, appointments, notifications, a service layer, automated tests, and CI.',
+          'Expanded the system with record histories, guardian-linked and access-request workflows, appointments, notifications, a service layer, automated tests, and CI.',
       },
     ],
   },

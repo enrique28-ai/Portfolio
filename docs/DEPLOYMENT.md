@@ -60,6 +60,8 @@ Active permanent redirects:
 
 Both redirects use HTTP `301` and preserve paths, path suffixes, and query strings.
 
+The Pages-hostname redirect applies to the exact production hostname `https://portfolio-8au.pages.dev`. Preview deployment subdomains such as `https://<preview>.portfolio-8au.pages.dev` are intentionally excluded so pull-request and branch previews remain directly accessible for verification. These preview URLs are not canonical production URLs.
+
 ## Metadata limitation
 
 Route-specific metadata is client-rendered. Social preview crawlers that do not execute JavaScript may not receive route-specific metadata. The application does not use server-side rendering or prerendering.
