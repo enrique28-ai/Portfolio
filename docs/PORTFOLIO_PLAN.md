@@ -108,7 +108,7 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 **Goal:** Provide approved ways to contact Enrique and review his professional presence.
 
-**Scope:** Add only contact details, resume access, GitHub, LinkedIn, and other professional links explicitly approved for public display.
+**Scope:** Add only contact details, GitHub, LinkedIn, and other professional links explicitly approved for public display.
 
 **Completion criteria:** Every published detail is approved, every link works, and contact actions are clear, accessible, and privacy-conscious.
 
@@ -156,7 +156,7 @@ This document defines the approved delivery phases for Enrique Preciado's academ
 
 ## Phase 16 — Final Admissions Audit
 
-**Status:** NOT STARTED
+**Status:** IN PROGRESS
 
 **Goal:** Verify the complete portfolio from an admissions-focused perspective before final release.
 

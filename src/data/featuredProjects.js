@@ -7,7 +7,7 @@ const featuredProjects = [
     id: 'crud-process',
     name: 'CRUD-Process',
     summary:
-      'An authenticated Flask application for organizing user-owned process records, calculating efficiency from recorded values, and presenting charted results.',
+      'An authenticated Flask application for organizing user-owned process records, calculating an application-defined efficiency percentage from recorded values, and presenting charted results.',
     technologies: ['Python', 'Flask', 'SQLAlchemy', 'MySQL'],
   },
   {
