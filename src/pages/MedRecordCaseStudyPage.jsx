@@ -29,12 +29,26 @@ function MedRecordCaseStudyPage() {
             ))}
           </dl>
 
-          <a
-            className="case-study-header__source text-link"
-            href="https://github.com/enrique28-ai/Medrecord"
-          >
-            View source on GitHub
-          </a>
+          <div className="case-study-header__actions">
+            <a
+              className="button button--secondary"
+              href="https://medrecord-vd1x.onrender.com"
+              rel="noopener noreferrer"
+              target="_blank"
+            >
+              View running sample
+            </a>
+            <a
+              className="case-study-header__source text-link"
+              href="https://github.com/enrique28-ai/Medrecord"
+            >
+              View source on GitHub
+            </a>
+          </div>
+          <p className="case-study-header__sample-note case-study-qualification">
+            Historical project sample. This deployed version is provided as implementation
+            evidence and does not represent a currently maintained production application.
+          </p>
         </div>
       </header>
 

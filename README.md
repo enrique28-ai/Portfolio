@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 16 — Final Admissions Audit (`COMPLETE`). Phases 1–11 and Phases 13–16 are complete; Phase 12 was intentionally skipped for the current release. The final admissions audit is complete, and the portfolio is ready for admissions use. Production remains [https://enriquepreciado.dev](https://enriquepreciado.dev).
+Phases 1–16 are complete. Phase 12 — Project Evidence, originally deferred for the first release, was later resumed and completed with directly reviewable project evidence for CRUD-Process, MedRecord, and DR-VIPS. The final admissions audit is complete, and the portfolio is ready for admissions use. Production remains [https://enriquepreciado.dev](https://enriquepreciado.dev).
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan and [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the approved deployment architecture.
 
