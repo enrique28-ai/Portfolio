@@ -33,7 +33,7 @@ npm run preview  # Preview the production build locally
 
 ## Current phase
 
-Phase 16 — Final Admissions Audit (`IN PROGRESS`). Phases 1–11, Phase 13, Phase 14, and Phase 15 are complete; Phase 12 was intentionally skipped for the current release. The final admissions audit is in progress, and the production site remains [https://enriquepreciado.dev](https://enriquepreciado.dev).
+Phase 16 — Final Admissions Audit (`COMPLETE`). Phases 1–11 and Phases 13–16 are complete; Phase 12 was intentionally skipped for the current release. The final admissions audit is complete, and the portfolio is ready for admissions use. Production remains [https://enriquepreciado.dev](https://enriquepreciado.dev).
 
 See [docs/PORTFOLIO_PLAN.md](docs/PORTFOLIO_PLAN.md) for the phased plan and [docs/DEPLOYMENT.md](docs/DEPLOYMENT.md) for the approved deployment architecture.
 
