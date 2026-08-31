@@ -74,7 +74,7 @@ export const workflowSteps = [
   },
   {
     description:
-      'Record a name, duration, operator count, cycle time, units produced, setup time, and downtime.',
+      'Record a name, duration, standard cycle time, units produced, setup time, and downtime. Time-based inputs are expressed in seconds.',
     label: 'Enter process data',
   },
   {
@@ -84,7 +84,7 @@ export const workflowSteps = [
   },
   {
     description:
-      'The application loads the selected table, its process records, and their calculated percentages.',
+      'The application loads the selected table, its process records, and their calculated process-efficiency percentages.',
     label: 'Retrieve and review',
   },
   {
@@ -111,22 +111,22 @@ export const recordDefinitions = [
   },
   {
     description:
-      'Belongs to both a user and a table. It stores a name, duration, operator count, cycle time, units produced, setup time, downtime, author, and a sequential identifier within its table.',
+      'Belongs to both a user and a table. The current workflow stores a name, duration, standard cycle time, units produced, setup time, downtime, author, and a sequential identifier within its table.',
     label: 'Process',
   },
 ]
 
 export const calculationRows = [
   {
-    expression: 'cycle time \u00D7 units produced',
+    expression: 'standard cycle time \u00D7 units produced',
     label: 'Standard time',
   },
   {
-    expression: '(duration \u2212 downtime \u2212 setup time) \u00D7 operators',
-    label: 'Adjusted actual time',
+    expression: 'duration \u2212 downtime \u2212 setup time',
+    label: 'Net operating time',
   },
   {
-    expression: 'standard time \u00F7 adjusted actual time \u00D7 100',
-    label: 'Calculated result',
+    expression: 'standard time \u00F7 net operating time \u00D7 100',
+    label: 'Process efficiency',
   },
 ]
