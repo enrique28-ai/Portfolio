@@ -3,11 +3,11 @@ const featuredProjects = [
     category: 'Process-data web application',
     caseStudyPath: '/projects/crud-process',
     evidence:
-      'How structured operational data can support a defined calculation and reporting workflow.',
+      'How structured operational data can support a defined process-efficiency calculation and reporting workflow.',
     id: 'crud-process',
     name: 'CRUD-Process',
     summary:
-      'An authenticated Flask application for organizing user-owned process records, calculating an application-defined efficiency percentage from recorded values, and presenting charted results.',
+      'An authenticated Flask application for organizing user-owned process records, calculating a process-efficiency percentage from recorded production and time values, and presenting charted results.',
     technologies: ['Python', 'Flask', 'SQLAlchemy', 'MySQL'],
   },
   {

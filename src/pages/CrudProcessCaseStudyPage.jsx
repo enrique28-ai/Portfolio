@@ -137,11 +137,11 @@ function CrudProcessCaseStudyPage() {
         </div>
       </CaseStudySection>
 
-      <CaseStudySection heading="Application-defined calculation">
+      <CaseStudySection heading="Process-efficiency calculation">
         <div className="case-study-prose narrative-flow">
           <p>
-            The application combines values from each process record into a calculated
-            percentage that the interface labels as efficiency.
+            The application compares the standard production time represented by each process
+            record with its net operating time to calculate a process-efficiency percentage.
           </p>
           <dl className="calculation-record">
             {calculationRows.map(({ expression, label }) => (
@@ -152,10 +152,10 @@ function CrudProcessCaseStudyPage() {
             ))}
           </dl>
           <p className="case-study-qualification">
-            This is the calculation implemented by the application. The repository does not
-            establish external validation of the formula or its assumptions. It is presented
-            here as historical implementation evidence rather than as a recognized industrial
-            metric.
+            This is the process-efficiency calculation implemented by the application. The
+            repository does not establish external validation of the formula or its assumptions
+            as a recognized industrial KPI. It is presented here as historical implementation
+            evidence.
           </p>
         </div>
       </CaseStudySection>
@@ -163,7 +163,8 @@ function CrudProcessCaseStudyPage() {
       <CaseStudySection heading="Reporting with Matplotlib">
         <p className="case-study-prose">
           Matplotlib generates an SVG line chart using the process names in entry order and the
-          calculated percentage for each process. The chart compares records by process order.
+          calculated process-efficiency percentage for each process. The chart compares records
+          by process order and expands its vertical range when a calculated value exceeds 100%.
           Because this view does not model timestamps, it is not historical or time-series
           analysis.
         </p>
@@ -195,7 +196,7 @@ function CrudProcessCaseStudyPage() {
         <p className="case-study-prose">
           CRUD-Process demonstrates the integration of an authenticated user workflow, form
           validation, relational data ownership, SQL persistence, CRUD operations, Flask route
-          logic, an application-defined calculation, server-generated SVG reporting, and a
+          logic, a process-efficiency calculation, server-generated SVG reporting, and a
           bounded classification experiment. Its value is the way these responsibilities work
           together inside one complete database-backed application, not a claim of production
           maturity.
@@ -222,8 +223,11 @@ function CrudProcessCaseStudyPage() {
         <p className="case-study-prose">
           The repository does not include an automated test suite, database migration history,
           or held-out classifier evaluation. It also does not establish external validation of
-          the application-defined calculation. Authentication and account flows represent an
-          early implementation rather than an audited production design.
+          the process-efficiency calculation. The Process model retains a legacy operator-count
+          column for schema compatibility, but the current form, create/update workflow,
+          interface, and process-efficiency calculation no longer use operator count.
+          Authentication and account flows represent an early implementation rather than an
+          audited production design.
         </p>
       </CaseStudySection>
 

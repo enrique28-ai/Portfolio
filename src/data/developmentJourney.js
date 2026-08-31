@@ -3,7 +3,7 @@ export const developmentJourney = [
     id: 'crud-process',
     name: 'CRUD-Process',
     description:
-      'CRUD-Process established an authenticated Flask application for recording process data, organizing entries into user-owned tables, calculating an application-defined efficiency percentage, and charting results.',
+      'CRUD-Process established an authenticated Flask application for recording process data, organizing entries into user-owned tables, calculating a process-efficiency percentage, and charting results.',
     metadata: ['Python', 'Flask', 'SQLAlchemy', 'MySQL'],
     transition: {
       label: 'What changed next',

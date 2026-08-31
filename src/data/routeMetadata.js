@@ -18,7 +18,7 @@ export const routeMetadata = {
   '/projects/crud-process': {
     title: 'CRUD-Process Case Study | Enrique Preciado',
     description:
-      'Case study of CRUD-Process, a Flask and MySQL application connecting authenticated process records, application-defined calculations, and charted output.',
+      'Case study of CRUD-Process, a Flask and MySQL application connecting authenticated process records, a process-efficiency calculation, and charted output.',
     canonical: `${SITE_ORIGIN}/projects/crud-process`,
   },
   '/projects/medrecord': {
