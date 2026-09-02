@@ -62,6 +62,8 @@ function CrudProcessCaseStudyPage() {
             and charted output.
           </p>
           <p>
+            CRUD-Process was independently developed for learning and portfolio purposes and
+            has not been used to manage real production processes in an organizational setting.
             Its importance in this portfolio comes from bringing interface behavior, backend
             logic, and relational persistence into one complete application workflow.
           </p>

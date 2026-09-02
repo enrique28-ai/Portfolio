@@ -14,6 +14,11 @@ function ProjectsPage() {
               projects. Each overview identifies what the project handles, how it is built,
               and what the implementation demonstrates.
             </p>
+            <p className="projects-index__context case-study-qualification">
+              These projects were independently developed as learning and portfolio work. They
+              were not commissioned by an employer or client and have not been used in
+              real-world operational or clinical settings.
+            </p>
           </div>
         </header>
 

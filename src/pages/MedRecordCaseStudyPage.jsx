@@ -61,8 +61,9 @@ function MedRecordCaseStudyPage() {
             account-scoped structure.
           </p>
           <p>
-            The project explores record organization through a medical domain; the repository
-            does not establish clinical use.
+            MedRecord was independently developed as learning and portfolio work. It explores
+            record organization through a medical domain; it has not been used in clinical
+            practice, for real clinical care, or to manage real-world patient records.
           </p>
         </div>
       </CaseStudySection>
@@ -208,8 +209,9 @@ function MedRecordCaseStudyPage() {
         <p className="case-study-prose">
           The repository does not include a substantive automated test suite or a record-revision
           or audit-history model, and it does not demonstrate an automatic UserProfile creation
-          or preference-editing workflow. Deployment-oriented configuration is present, but the
-          repository does not establish a successful deployment.
+          or preference-editing workflow. The running deployment is provided as historical
+          implementation evidence. It does not establish production readiness, scale, uptime,
+          or clinical use.
         </p>
       </CaseStudySection>
 
