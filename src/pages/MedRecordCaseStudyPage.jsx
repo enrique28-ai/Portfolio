@@ -32,7 +32,7 @@ function MedRecordCaseStudyPage() {
           <div className="case-study-header__actions">
             <a
               className="button button--secondary"
-              href="https://medrecord-vd1x.onrender.com"
+              href="https://medrecord.enriquepreciado.dev"
               rel="noopener noreferrer"
               target="_blank"
             >

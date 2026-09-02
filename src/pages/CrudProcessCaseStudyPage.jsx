@@ -33,7 +33,7 @@ function CrudProcessCaseStudyPage() {
           <div className="case-study-header__actions">
             <a
               className="button button--secondary"
-              href="https://crud-process-kbwo.onrender.com"
+              href="https://crud.enriquepreciado.dev"
               rel="noopener noreferrer"
               target="_blank"
             >
