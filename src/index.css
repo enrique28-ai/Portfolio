@@ -775,6 +775,11 @@
   color: var(--color-text-secondary);
 }
 
+.projects-index__context {
+  margin-top: var(--space-4);
+  color: var(--color-text-secondary);
+}
+
 .featured-project-records {
   margin-top: var(--space-8);
 }
@@ -910,6 +915,16 @@
   max-width: var(--layout-reading);
   margin-top: var(--space-3);
   color: var(--color-text-secondary);
+}
+
+.case-study-header__demo-guidance {
+  max-width: var(--layout-reading);
+  margin-top: var(--space-5);
+  color: var(--color-text-secondary);
+}
+
+.case-study-header__demo-guidance > * + * {
+  margin-top: var(--space-3);
 }
 
 .case-study-section {

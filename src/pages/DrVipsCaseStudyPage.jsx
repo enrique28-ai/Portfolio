@@ -38,6 +38,31 @@ function DrVipsCaseStudyPage() {
               View source on GitHub
             </a>
           </div>
+
+          <aside
+            className="case-study-header__demo-guidance case-study-qualification"
+            aria-labelledby="dr-vips-demo-guidance-title"
+          >
+            <h2 className="technical-label" id="dr-vips-demo-guidance-title">
+              Demo guidance
+            </h2>
+            <p>
+              DR-VIPS is an independently developed learning and portfolio project. The public
+              deployment is a demonstration environment and has not been used for clinical care
+              or real-world patient management.
+            </p>
+            <p>
+              For the clearest end-to-end demonstration, use two separate accounts with
+              different email addresses: one doctor account and one patient account. Using
+              separate browser profiles or browsers makes it easier to review the role-specific
+              workflow.
+            </p>
+            <p>
+              The public demo currently has professional allowlist enforcement disabled to
+              simplify evaluation, so a professional-domain email is not required to create a
+              doctor demo account. Other role and identity rules remain part of the application.
+            </p>
+          </aside>
         </div>
       </header>
 
